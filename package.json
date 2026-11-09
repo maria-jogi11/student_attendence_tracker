@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "start": "vite preview --host 0.0.0.0 --port 8080",
     "postinstall": "node -e \"const fs=require('fs'); if(fs.existsSync('node_modules/@rollup/wasm-node/dist')){fs.cpSync('node_modules/@rollup/wasm-node/dist','node_modules/rollup/dist',{recursive:true,force:true});}\""
   },
   "dependencies": {
